@@ -6,7 +6,7 @@ type: landing
 
 design:
   # Default section spacing
-  spacing: '3rem'
+  spacing: '1.5rem'
 
 sections:
   - block: resume-biography-3
@@ -21,10 +21,18 @@ sections:
     design:
       # Apply a gradient background
       css_class: hbx-bg-gradient
+      css_style: 'padding-top: 0 !important; margin-top: -5rem !important;'
       # Avatar customization
       avatar:
         size: medium # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
         shape: circle # Options: circle (default), square, rounded
+  - block: resume-experience
+    content:
+      username: admin
+      show_education: false
+    design:
+      date_format: 'January 2006'
+      is_education_first: false
   - block: markdown
     content:
       title: '☁️ My Mission'
@@ -74,12 +82,29 @@ sections:
       title: Recent & Upcoming Talks
       subtitle: ''
       text: |-
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(504px, 1fr)); gap: 2rem; justify-items: center; margin: 2rem 0;">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/sQmWq0P5wNI?si=A0A63NoUEVaNYIQr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <style>
+          .talks-grid { 
+            display: grid; 
+            grid-template-columns: repeat(2, 1fr); 
+            gap: 2rem; 
+            width: 100%; 
+            max-width: 100%;
+            align-items: start;
+          }
+          .talks-grid iframe { width: 100%; }
+        </style>
+        <div class="talks-grid">
+          <div>
+            <iframe width="100%" height="500" src="https://www.youtube.com/embed/sQmWq0P5wNI?si=A0A63NoUEVaNYIQr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
           
-          <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7386038531695218688?collapsed=1" height="592" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+          <div>
+            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7386038531695218688?collapsed=1" height="700" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+          </div>
           
-          <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7076831043495870464" height="649" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+          <div>
+            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7076831043495870464" height="700" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+          </div>
         </div>
     design:
       columns: '1'
@@ -89,18 +114,41 @@ sections:
       title: Recent News
       subtitle: ''
       text: |-
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(504px, 1fr)); gap: 2rem; justify-items: center;">
-          <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7378967367785177088?collapsed=1" height="670" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+        <style>
+          .news-grid { 
+            display: grid; 
+            grid-template-columns: repeat(2, 1fr); 
+            gap: 2rem; 
+            width: 100%; 
+            max-width: 100%;
+            align-items: start;
+          }
+          .news-grid iframe { width: 100%; }
+        </style>
+        <div class="news-grid">
+          <div>
+            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7378967367785177088?collapsed=1" height="750" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+          </div>
           
-          <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7338558748099006464" height="837" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+          <div>
+            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7338558748099006464" height="900" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+          </div>
           
-          <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7325905070019997697" height="411" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+          <div>
+            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7325905070019997697" height="500" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+          </div>
           
-          <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7325659861927493633?collapsed=1" height="519" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+          <div>
+            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7325659861927493633?collapsed=1" height="600" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+          </div>
           
-          <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7241470423249383426?collapsed=1" height="670" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+          <div>
+            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7241470423249383426?collapsed=1" height="750" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+          </div>
           
-          <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7179261206837280768?collapsed=1" height="574" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+          <div>
+            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7179261206837280768?collapsed=1" height="650" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+          </div>
         </div>
     design:
       columns: '1'
