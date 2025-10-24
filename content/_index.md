@@ -6,7 +6,7 @@ type: landing
 
 design:
   # Default section spacing
-  spacing: '6rem'
+  spacing: '3rem'
 
 sections:
   - block: resume-biography-3
@@ -31,14 +31,14 @@ sections:
         shape: circle # Options: circle (default), square, rounded
   - block: markdown
     content:
-      title: '📚 My Research'
+      title: '☁️ My Mission'
       subtitle: ''
       text: |-
-        Use this area to speak to your mission. I'm a research scientist in the Moonshot team at DeepMind. I blog about machine learning, deep learning, and moonshots.
+        I'm a strategic architect driving innovation at the intersection of cloud technology, AI/ML, and partner ecosystems. At AWS, I lead technical integrations that accelerate partner go-to-market strategies and deliver measurable business impact.
 
-        I apply a range of qualitative and quantitative methods to comprehensively investigate the role of science and technology in the economy.
+        My expertise spans generative AI architecture, data analytics pipelines, and hybrid cloud solutions. I'm passionate about enabling partners to build transformative solutions that drive real-world outcomes.
 
-        Please reach out to collaborate 😃
+        Let's collaborate on your next cloud innovation project! �
     design:
       columns: '1'
   - block: collection
@@ -62,44 +62,52 @@ sections:
         exclude_featured: false
     design:
       view: citation
-  - block: collection
+  - block: markdown
+    content:
+      title: ''
+      subtitle: ''
+      text: |-
+        <div style="display: flex; justify-content: center; margin: 2rem 0;">
+          <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6899098617278279680?collapsed=1" height="479" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+        </div>
+    design:
+      columns: '1'
+  - block: markdown
     id: talks
     content:
       title: Recent & Upcoming Talks
-      filters:
-        folders:
-          - events
+      subtitle: ''
+      text: |-
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(504px, 1fr)); gap: 2rem; justify-items: center; margin: 2rem 0;">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/sQmWq0P5wNI?si=A0A63NoUEVaNYIQr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          
+          <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7386038531695218688?collapsed=1" height="592" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+          
+          <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7076831043495870464" height="649" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+        </div>
     design:
-      view: card
-  - block: collection
+      columns: '1'
+  - block: markdown
     id: news
     content:
       title: Recent News
       subtitle: ''
-      text: ''
-      # Page type to display. E.g. post, talk, publication...
-      page_type: blog
-      # Choose how many pages you would like to display (0 = all pages)
-      count: 5
-      # Filter on criteria
-      filters:
-        author: ''
-        category: ''
-        tag: ''
-        exclude_featured: false
-        exclude_future: false
-        exclude_past: false
-        publication_type: ''
-      # Choose how many pages you would like to offset by
-      offset: 0
-      # Page order: descending (desc) or ascending (asc) date.
-      order: desc
+      text: |-
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(504px, 1fr)); gap: 2rem; justify-items: center;">
+          <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7378967367785177088?collapsed=1" height="670" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+          
+          <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7338558748099006464" height="837" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+          
+          <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7325905070019997697" height="411" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+          
+          <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7325659861927493633?collapsed=1" height="519" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+          
+          <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7241470423249383426?collapsed=1" height="670" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+          
+          <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7179261206837280768?collapsed=1" height="574" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+        </div>
     design:
-      # Choose a layout view
-      view: card
-      # Reduce spacing
-      spacing:
-        padding: [0, 0, 0, 0]
+      columns: '1'
   - block: cta-card
     demo: true # Only display this section in the Hugo Blox Builder demo site
     content:
