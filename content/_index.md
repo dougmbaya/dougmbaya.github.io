@@ -83,17 +83,26 @@ sections:
       subtitle: ''
       text: |-
         <style>
-          .talks-grid { 
-            display: grid; 
-            grid-template-columns: repeat(2, 1fr); 
-            gap: 2rem; 
-            width: 100%; 
-            max-width: 100%;
-            align-items: start;
+          .talks-masonry { 
+            column-count: 1;
+            column-gap: 2rem;
+            column-fill: initial;
+            max-width: none !important;
+            width: 100% !important;
           }
-          .talks-grid iframe { width: 100%; }
+          .talks-masonry > div { 
+            margin-bottom: 2rem;
+            display: inline-block;
+            vertical-align: top;
+            width: 100%;
+          }
+          .talks-masonry iframe { width: 100%; }
+          
+          /* Override container constraints */
+          #talks .hbb-prose { max-width: none !important; }
+          #talks .container { max-width: none !important; }
         </style>
-        <div class="talks-grid">
+        <div class="talks-masonry">
           <div>
             <iframe width="100%" height="500" src="https://www.youtube.com/embed/sQmWq0P5wNI?si=A0A63NoUEVaNYIQr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
@@ -115,17 +124,26 @@ sections:
       subtitle: ''
       text: |-
         <style>
-          .news-grid { 
-            display: grid; 
-            grid-template-columns: repeat(2, 1fr); 
-            gap: 2rem; 
-            width: 100%; 
-            max-width: 100%;
-            align-items: start;
+          .news-masonry { 
+            column-count: 1;
+            column-gap: 2rem;
+            column-fill: initial;
+            max-width: none !important;
+            width: 100% !important;
           }
-          .news-grid iframe { width: 100%; }
+          .news-masonry > div { 
+            margin-bottom: 2rem;
+            display: inline-block;
+            vertical-align: top;
+            width: 100%;
+          }
+          .news-masonry iframe { width: 100%; }
+          
+          /* Override container constraints */
+          #news .hbb-prose { max-width: none !important; }
+          #news .container { max-width: none !important; }
         </style>
-        <div class="news-grid">
+        <div class="news-masonry">
           <div>
             <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7378967367785177088?collapsed=1" height="750" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
           </div>
