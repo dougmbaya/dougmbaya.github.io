@@ -21,7 +21,7 @@ sections:
     design:
       # Apply a gradient background
       css_class: hbx-bg-gradient
-      css_style: 'padding-top: 0 !important; margin-top: -5rem !important;'
+      css_style: 'padding-top: 2rem !important; margin-top: 0 !important; @media (min-width: 768px) { padding-top: 0 !important; margin-top: -5rem !important; }'
       # Avatar customization
       avatar:
         size: medium # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
